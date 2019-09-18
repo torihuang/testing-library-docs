@@ -67,13 +67,13 @@ For more information, see
 
 ## Firing events
 
-- **fireEvent()** trigger DOM event: `fireEvent(node, event)`
+- **fireEvent()** trigger DOM event: `fireEvent(event)`
 - **fireEvent.\*** helpers for default event types
-  - **click** `fireEvent.click(node)`
-  - **input** `fireEvent.input(node, event)`
+  - **click** `fireEvent.click()`
+  - **input** `fireEvent.input(event)`
   - [See all supported events](https://github.com/testing-library/dom-testing-library/blob/master/src/events.js)
 
-For more information, see [Events API](dom-testing-library/api-events.md)
+For more information, see [Events API](dom-testing-library/api-events.md).
 
 > **Difference from DOM Testing Library**
 >
@@ -103,7 +103,7 @@ Given the following HTML:
 <div>Hello World</div>
 ```
 
-All these matchers **will find the element:**
+All these matchers **will find the element above:**
 
 ```javascript
 // Matching a string:
